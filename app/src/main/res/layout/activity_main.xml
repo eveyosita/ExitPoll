@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/no_button"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:text="งดออกเสียง"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/number3_button"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/number3_button"
+        app:layout_constraintTop_toBottomOf="@+id/number3_button" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="ดูผล"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/no_button"
+        app:layout_constraintStart_toStartOf="@+id/no_button" />
+
+    <Button
+        android:id="@+id/number2_button"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:text="เลือกผูสมัครหมายเลข 2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/number1_button"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/number1_button"
+        tools:layout_editor_absoluteY="252dp" />
+
+    <Button
+        android:id="@+id/number3_button"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:text="เลือกผูสมัครหมายเลข 3"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/number2_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/number2_button"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <ImageView
+        android:id="@+id/exitpool_imageView"
+        android:layout_width="386dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/exit_poll" />
+
+    <Button
+        android:id="@+id/number1_button"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="เลือกผูสมัครหมายเลข 1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/exitpool_imageView"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/exitpool_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/exitpool_imageView" />
+
+</android.support.constraint.ConstraintLayout>
